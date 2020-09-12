@@ -1,0 +1,12 @@
+<launch>
+  <arg name="port_name"                default="/dev/ttyUSB0"/>
+  <arg name="ctl_rate_hz"                default="10"/>
+
+  <param name="lx224_info"          value="$(find lx224_controller)/config/basic.yaml"/>
+  
+  <node type="lx224_controller" pkg="lx224_controller" name="lx224_controller" required="true" output="screen">
+    <param name="port_name" value="$(arg port_name)" />
+    <param name="ctl_rate_hz" value="$(arg ctl_rate_hz)" />
+
+  </node>
+</launch>

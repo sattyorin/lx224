@@ -1,0 +1,5 @@
+int8 id
+int16 ang
+int16 speed
+---
+bool result
