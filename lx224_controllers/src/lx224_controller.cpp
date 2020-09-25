@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	priv_node_handle_.getParam("ctl_rate_hz",ctl_rate_hz);
 
 	ROS_INFO("port open ( %s ) ",port_name.data());
-	if (LX224.openPort(port_name.data()) != 0) 
+	if (LX224.openPort(port_name.data()) != 1) 
 	{
 		ROS_ERROR("can't open serial port ( %s )",port_name.data());
 		return -1;
