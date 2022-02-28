@@ -4,6 +4,6 @@
 ## Getting Started
 
 ```
-roslaunch lx224 lx224_controller.launch
-rosrun lx224 lx224_controller.cpp
+roslaunch lx224 lx224_controller
+rosrun lx224 lx224_controller
 ```
